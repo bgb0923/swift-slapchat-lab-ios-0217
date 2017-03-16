@@ -11,6 +11,8 @@ import CoreData
 
 class DataStore {
     
+    var messages = [Message]()
+    
     static let sharedInstance = DataStore()
     
     private init() {}
@@ -60,4 +62,16 @@ class DataStore {
         }
     }
     
+    func fetch() {
+        let context = self.persistentContainer.viewContext
+        let fetchRequest : NSFetchRequest<Message> = Message.fetchRequest()
+        do {
+            self.messages = try context.fetch(fetchRequest)
+        }
+        catch {
+            
+        }
+    }
 }
+
+

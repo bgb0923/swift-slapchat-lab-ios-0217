@@ -13,8 +13,7 @@
 		3D7AE44A1D3B2FCE00964D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7AE4481D3B2FCE00964D7D /* LaunchScreen.storyboard */; };
 		3D7AE46E1D3B2FE900964D7D /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7AE46D1D3B2FE900964D7D /* DataStore.swift */; };
 		3D7AE4701D3B30FC00964D7D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7AE46F1D3B30FC00964D7D /* TableViewController.swift */; };
-		8F68D9FF1E1464FD006F842D /* SlapChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F68D9FE1E1464FD006F842D /* SlapChatTests.swift */; };
-		8F68DA071E1465E6006F842D /* SlapChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F68D9FE1E1464FD006F842D /* SlapChatTests.swift */; };
+		56C7E04A1E7AC86600B1FCCC /* SlapChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56C7E0481E7AC86600B1FCCC /* SlapChat.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +35,7 @@
 		3D7AE44B1D3B2FCE00964D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D7AE46D1D3B2FE900964D7D /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		3D7AE46F1D3B30FC00964D7D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		56C7E0491E7AC86600B1FCCC /* SlapChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SlapChat.xcdatamodel; sourceTree = "<group>"; };
 		8F68D9FC1E1464FD006F842D /* SlapChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlapChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F68D9FE1E1464FD006F842D /* SlapChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlapChatTests.swift; sourceTree = "<group>"; };
 		8F68DA001E1464FD006F842D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +87,7 @@
 				3D7AE4461D3B2FCE00964D7D /* Assets.xcassets */,
 				3D7AE4481D3B2FCE00964D7D /* LaunchScreen.storyboard */,
 				3D7AE44B1D3B2FCE00964D7D /* Info.plist */,
+				56C7E0481E7AC86600B1FCCC /* SlapChat.xcdatamodeld */,
 			);
 			path = SlapChat;
 			sourceTree = "<group>";
@@ -206,7 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D7AE46E1D3B2FE900964D7D /* DataStore.swift in Sources */,
-				8F68DA071E1465E6006F842D /* SlapChatTests.swift in Sources */,
+				56C7E04A1E7AC86600B1FCCC /* SlapChat.xcdatamodeld in Sources */,
 				3D7AE43D1D3B2FCE00964D7D /* AppDelegate.swift in Sources */,
 				3D7AE4701D3B30FC00964D7D /* TableViewController.swift in Sources */,
 			);
@@ -216,7 +217,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F68D9FF1E1464FD006F842D /* SlapChatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,8 +427,22 @@
 				8F68DA041E1464FD006F842D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		56C7E0481E7AC86600B1FCCC /* SlapChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				56C7E0491E7AC86600B1FCCC /* SlapChat.xcdatamodel */,
+			);
+			currentVersion = 56C7E0491E7AC86600B1FCCC /* SlapChat.xcdatamodel */;
+			path = SlapChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3D7AE4311D3B2FCD00964D7D /* Project object */;
 }
