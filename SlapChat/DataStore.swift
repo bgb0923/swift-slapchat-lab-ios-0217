@@ -67,9 +67,18 @@ class DataStore {
         let fetchRequest : NSFetchRequest<Message> = Message.fetchRequest()
         do {
             self.messages = try context.fetch(fetchRequest)
+            self.sort(message: self.messages)
         }
         catch {
             
+        }
+    }
+    
+    func sort(message: [Message]) {
+        messages = message.sorted { (message1, message2) -> Bool in
+            guard let time1 = message1.createdAt?.timeIntervalSince1970 else {return false}
+            guard let time2 = message2.createdAt?.timeIntervalSince1970 else {return false}
+            return time1 < time2
         }
     }
 }
